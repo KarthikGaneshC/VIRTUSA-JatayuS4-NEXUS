@@ -17,7 +17,7 @@ import os
 from migration import SybaseToOracleMigration
 
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyAWe9U9FTUYK-625v1xUbLgTMLXS6BtYww")
+genai.configure(api_key="your api key")
 gemini_model = genai.GenerativeModel("gemini-2.5-pro")
 
 # Add this near top of app.py
@@ -1333,4 +1333,5 @@ def call_gemini():
         return jsonify({"response": "❌ Gemini API error: " + str(e)}), 500
 
 if __name__ == '__main__':
+
     app.run(debug=True)
