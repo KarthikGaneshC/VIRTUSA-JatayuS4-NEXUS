@@ -15,26 +15,19 @@ This tool uses AI-driven conversion, human-in-the-loop review, and automated tes
 ## structure
 
 ```
-sybase-to-oracle-ai/
-│
-├── app.py                # Main Streamlit application
-├── ai_engine/            # AI model and transformation logic
-│   ├── model_loader.py   # Loads fine-tuned LLM
-│   ├── converter.py      # AI-powered code conversion logic
-│   └── tests/            # AI transformation test cases
-│
-├── db_connectors/        # Database connectivity modules
-│   ├── sybase_connector.py
-│   ├── oracle_connector.py
-│   └── utils.py
-│
-├── reporting/            # Migration reports & analytics
-│   ├── report_generator.py
-│   └── logs/
-│
-├── requirements.txt      # Python dependencies
-├── .env                  # Database credentials & AI model path
-└── README.md             # Project documentation
+project-root/
+├── app.py # FastAPI application entry point
+├── migration.py # Handles LLM-based SQL conversion logic
+├── uploads/ # Stores user-uploaded .sql files
+├── report.html # Report generation UI
+├── review_edit.html # Inline AI assistant for editing converted SQL
+├── testing.html # AI-based testing UI
+├── login.html # Login interface
+├── uipage0.html → uipage4.html # UI pages for navigation and workflow
+├── circular_logo.png # Branding image
+├── venv/ # Python virtual environment
+├── pycache/ # Compiled bytecode files
+└── README.md # Project documentation (this file)
 ```
 ```
 # Flow of work
