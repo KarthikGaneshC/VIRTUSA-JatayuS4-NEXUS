@@ -78,8 +78,8 @@ Database Connectors: Sybase ASE, Oracle CX
 
 1. ** Clone the Repository **
 ``` bash
-git clone https://github.com/your-username/sybase-to-oracle-ai.git
-cd sybase-to-oracle-ai
+git clone https://github.com/KarthikGaneshC/VIRTUSA-JatayuS4-NEXUS
+cd VIRTUSA-JatayuS4-NEXUS
 ```
 
 **2. Initialize Virtual Environment**
